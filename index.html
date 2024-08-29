@@ -110,7 +110,6 @@
             </footer>
 
             <script>
-                // The JSON array (you can also fetch this from an external source)
                 const courses = [
                   {
                     "ID": "BasicTechnicalWriting",
@@ -168,27 +167,26 @@
                     }
                 ];
                 
-                // Function to handle the click event
+                
                 function handleViewClick(event) {
                     event.preventDefault();
                     
-                    // Get the ID from the data-id attribute
+                    
                     const courseId = event.target.getAttribute('data-id');
                     
-                    // Find the course object by ID
+                 
                     const course = courses.find(c => c.ID === courseId);
                     
                     if (course) {
-                        // Display the course details (for example, in an alert)
+                        
                         alert(`Course Name: ${course.Name}\nDescription: ${course.ShortDesc}`);
                         
-                        // Alternatively, you could populate a modal, div, or any other element with the course data
                     } else {
                         alert('Course not found!');
                     }
                 }
                 
-                // Attach event listeners to all "View" buttons
+                
                 document.querySelectorAll('.view-btn').forEach(button => {
                     button.addEventListener('click', handleViewClick);
                 });
