@@ -34,7 +34,7 @@
                         <div class="card-content">
                             <h3>Basic Technical Writing</h3>
                             <p>This course focuses on understanding the basics of technical writing and developing technical writing skills...</p>
-                            <a href="#" class="btn-secondary">View</a>
+                            <a href="#" class="btn-secondary view-btn" data-id="BasicTechnicalWriting" >View</a>
                         </div>
                     </div>
                     <div class="card">
@@ -42,7 +42,7 @@
                         <div class="card-content">
                             <h3>Confluence Advanced</h3>
                             <p>This course focuses to ensure your document type content is easy to manage and consume..</p>
-                            <a href="#" class="btn-secondary">View</a>
+                            <a href="#" class="btn-secondary view-btn" data-id="onfluenceAdvanced">View</a>
                         </div>
                     </div>
                     <div class="card">
@@ -50,31 +50,55 @@
                         <div class="card-content">
                             <h3>Confluence Basic</h3>
                             <p>This course guide end user to create there own easy to use and well formatted content...</p>
-                            <a href="#" class="btn-secondary">View</a>
+                            <a href="#" class="btn-secondary view-btn" data-id="ConfluenceBasic">View</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-image">ADD IMAGE</div>
                         <div class="card-content">
-                            <h3>Basic Technical Writing</h3>
+                            <h3>XML Author</h3>
                             <p>This course focuses on understanding the basics of technical writing and developing technical writing skills...</p>
-                            <a href="#" class="btn-secondary">View</a>
+                            <a href="#" class="btn-secondary view-btn" data-id="XMLAuthor">View</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-image">ADD IMAGE</div>
                         <div class="card-content">
-                            <h3>Confluence Advanced</h3>
+                            <h3>Advanced Technical Writing-API</h3>
                             <p>This course focuses to ensure your document type content is easy to manage and consume..</p>
-                            <a href="#" class="btn-secondary">View</a>
+                            <a href="#" class="btn-secondary view-btn" data-id="AdvancedTechnicalWriting-API">View</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-image">ADD IMAGE</div>
                         <div class="card-content">
-                            <h3>Confluence Basic</h3>
+                            <h3>Basic DITA-XML</h3>
+                            <p>This course focuses to ensure your document type content is easy to manage and consume..</p>
+                            <a href="#" class="btn-secondary  view-btn" data-id="BasicDITA-XML">View</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">ADD IMAGE</div>
+                        <div class="card-content">
+                            <h3>Advanced DITA-XML</h3>
+                            <p>This course focuses to ensure your document type content is easy to manage and consume..</p>
+                            <a href="#" class="btn-secondary view-btn" data-id="AdvancedDITA-XML">View</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">ADD IMAGE</div>
+                        <div class="card-content">
+                            <h3>xMetal Author</h3>
+                            <p>This course focuses to ensure your document type content is easy to manage and consume..</p>
+                            <a href="#" class="btn-secondary view-btn" data-id="xMetaLAuthor">View</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">ADD IMAGE</div>
+                        <div class="card-content">
+                            <h3>MadCap Flare</h3>
                             <p>This course guide end user to create there own easy to use and well formatted content...</p>
-                            <a href="#" class="btn-secondary">View</a>
+                            <a href="#" class="btn-secondary view-btn" data-id="MadCapFlare">View</a>
                         </div>
                     </div>
                     
@@ -84,6 +108,92 @@
                 <p>Copyrigt @ 2021. All rights reserved</p>
                 <a href="#top">Back to top</a>
             </footer>
+
+            <script>
+                // The JSON array (you can also fetch this from an external source)
+                const courses = [
+                  {
+                    "ID": "BasicTechnicalWriting",
+                    "ImageUrl": "https://metapercept.com/images/training-certification/Basic-DITA%E2%80%93XML.jpg",
+                    "Name": "Basic Technical Writing",
+                    "ShortDesc": "This course focuses on understanding the basics of technical writing and developing technical writing skills. In this course you will learn techniques to analyze writing contexts which helps you to produce effective, clean, and reader-center documents efficiently."
+                  },
+                  {
+                    "ID": "ConfluenceAdvanced",
+                    "ImageUrl": "https://metapercept.com/images/training-certification/Advanced-DITA–XML.jpg",
+                    "Name": "Confluence Advanced",
+                    "ShortDesc": "This course focuses to ensure your documentation-type content is easy to manage and consume. This skill builder covers useful techniques to surface relevant documentation and standardize your content using templates and blueprints. It includes how to set up a knowledge-base in Confluence for self- service customer support in JIRA Service Desk. It is useful for both Confluence Server Administrators and Confluence Cloud Administrators."
+                  },
+                  {
+                        "ID": "ConfluenceBasic",
+                        "ImageUrl": "images/training-certification/Authoring-Tools.jpg",
+                        "Name": "Confluence Basic",
+                        "ShortDesc": "This course guide end users to create their own easy to use and well-formatted content. This Skillbuilder covers templates, page and space structure, and categorization for content governance and discovery. It includes using cases, common/practical examples, best practices, and suggested solutions to structure and display your Confluence space content effectively using built-in features."
+                    },
+                    {
+                        "ID": "XMLAuthor",
+                        "ImageUrl": "images/training-certification/Simplified-Technical-English.jpg",
+                        "Name": "XML Author",
+                        "ShortDesc": "This course focuses deepen the knowledge in XML Author, in any industry. In this course, you'll learn about writing content in a fully structured and easy–to–use environment optimized for producing valid XML and production of multiple outputs for print and online delivery."
+                    },
+                    {
+                        "ID": "AdvancedTechnicalWriting-API",
+                        "ImageUrl": "images/training-certification/Technical-Writing.jpg",
+                        "Name": "Advanced Technical Writing - API",
+                        "ShortDesc": "This course focuses on deepening the knoweldge of technical content deliverable, containing instructions about how to effectively use and integrate with an API. It’s a concise reference manual containing all the information required to work with the API, with details about the functions, classes, return types, arguments and more, supported by tutorials and examples."
+                    },
+                    {
+                        "ID": "BasicDITA-XML",
+                        "ImageUrl": "images/training-certification/Authoring-Tools.jpg",
+                        "Name": "Basic DITA-XML",
+                        "ShortDesc": "This course focuses on individuals keen to broaden their knowledge or specialize in basic DITA- XML, in any industry. This course, focuses on what writers of business documents need to think and do differently to get their jobs done quickly and efficiently with DITA."
+                    },
+                    {
+                        "ID": "AdvancedDITA-XML",
+                        "ImageUrl": "images/training-certification/Basic-DITA–XML.jpg",
+                        "Name": "Advanced DITA-XML",
+                        "ShortDesc": "This course focuses on individuals keen to broaden their knowledge or specialize in advanced DITA- XML, in any industry. This course, focuses on what writers of business documents need to think and do differently to get their jobs done quickly and efficiently with DITA."
+                    },
+                    {
+                        "ID": "xMetaLAuthor",
+                        "ImageUrl": "images/training-certification/Advanced-DITA–XML.jpg",
+                        "Name": "xMetal Author",
+                        "ShortDesc": "Learn xMetal for XML based authoring to manage high volume structured content development and management. This training program is meant for the Technical Writers, Technical Authors, and Information Developers, working on high-end documentation for Automobile, Aerospace, Hardware, and Manufacturing business domains."
+                    },
+                    {
+                        "ID": "MadCapFlare",
+                        "ImageUrl": "images/training-certification/Technical-Writing.jpg",
+                        "Name": "MadCap Flare",
+                        "ShortDesc": "This course focuses on developing technical writing skills to deepen the knowledge of Madcap Flare for writing specialized content in structured format using DITA-XML and other structured formats. This course use a combination of lectures, demonstrations, and hands-on practice exercises to explore the major features of Flare."
+                    }
+                ];
+                
+                // Function to handle the click event
+                function handleViewClick(event) {
+                    event.preventDefault();
+                    
+                    // Get the ID from the data-id attribute
+                    const courseId = event.target.getAttribute('data-id');
+                    
+                    // Find the course object by ID
+                    const course = courses.find(c => c.ID === courseId);
+                    
+                    if (course) {
+                        // Display the course details (for example, in an alert)
+                        alert(`Course Name: ${course.Name}\nDescription: ${course.ShortDesc}`);
+                        
+                        // Alternatively, you could populate a modal, div, or any other element with the course data
+                    } else {
+                        alert('Course not found!');
+                    }
+                }
+                
+                // Attach event listeners to all "View" buttons
+                document.querySelectorAll('.view-btn').forEach(button => {
+                    button.addEventListener('click', handleViewClick);
+                });
+                </script>
+                
 
 </body>
 </html>
